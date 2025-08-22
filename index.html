@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume Builder</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      margin: 0; padding: 0;
+    }
+    header {
+      background: #333; color: #fff;
+      padding: 1rem; text-align: center;
+    }
+    .container {
+      width: 60%; margin: 2rem auto;
+      background: #fff; padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 { text-align: center; }
+    form label {
+      display: block; margin-top: 1rem; font-weight: bold;
+    }
+    form input, form textarea {
+      width: 100%; padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc; border-radius: 5px;
+    }
+    button {
+      margin-top: 1.5rem; padding: 10px 15px;
+      background: #333; color: #fff;
+      border: none; border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover { background: #555; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Resume Builder</h1>
+  </header>
+
+  <div class="container">
+    <h2>Fill Your Details</h2>
+    <form action="project.html" method="get">
+      <label>Full Name:</label>
+      <input type="text" name="name" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <label>Phone:</label>
+      <input type="text" name="phone" required>
+
+      <label>Summary:</label>
+      <textarea name="summary" rows="4"></textarea>
+
+      <label>Education:</label>
+      <textarea name="education" rows="3"></textarea>
+
+      <label>Skills:</label>
+      <textarea name="skills" rows="3"></textarea>
+
+      <label>Experience:</label>
+      <textarea name="experience" rows="4"></textarea>
+
+      <button type="submit">Generate Resume</button>
+    </form>
+  </div>
+</body>
+</html>
